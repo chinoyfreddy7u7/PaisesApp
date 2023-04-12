@@ -1,0 +1,43 @@
+<div
+*ngIf="imagenAccion==true"
+id="imagenAccion">
+<div class="imagen-container"  >
+    <div >
+<img 
+src="assets/ciudades.jpg"  alt="ciudades" >
+</div> 
+
+
+
+<h2 id="busqueda">busqueda por capital </h2>
+
+<div class="capital-contenedor">
+    <div class="col">
+
+        <app-pais-input 
+        (onEnter)="buscar($event)"
+        (onDebounce)="sugerencias($event)"
+         placeholder="Buscar Capital"
+       
+
+        ></app-pais-input>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<div *ngIf="hayError"
+class="alert alert-danger">
+    la nacion ingresada de nombre: {{termino}} no se existe
+    
+</div>
+<div *ngIf="capital.length>0" class="row">
+
+    <div class="col">
+       
+      <app-pais-tabla [paises]="capital"></app-pais-tabla>
+    </div>
+</div>
+

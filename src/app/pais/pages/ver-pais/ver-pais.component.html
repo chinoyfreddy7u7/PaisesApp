@@ -1,0 +1,61 @@
+<div *ngIf="!pais; else divPais" 
+class="alert-info">
+    espere por favor
+
+</div>
+<ng-template #divPais>
+<div class="pais-nombre-container">
+    <div class="col">
+        <h2 class="nombre-pais">
+        Pais: <small> {{pais[0].name.common}} </small>
+        </h2>
+    </div>
+</div>
+
+<div class="contenedor-bandera">
+<div class="row">
+    <div class="col-4-md">
+        <h3 class="bandera">bandera </h3>
+        <img [src]="pais[0].flags.png" class="text-center" />
+    </div>
+</div>
+</div>
+    <div class="contenedor-informacion">
+    <div class="col">
+        <h3>informacion: 
+
+        </h3>
+    </div>
+         <div id="informacion">
+        <ul class="list-group-item">
+            <li class="list-group-item">
+                <strong>poblacion {{pais[0].population | number}}</strong>
+
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="imagen-fondo">
+     <img src="assets/cuadroMadera.png" alt="" width="400px" height="300px">
+    </div>
+    
+<h3 class="contenedor-traduccion">
+
+    traducciones: 
+
+</h3>
+
+<div class="traducciones">
+    <div class="col">
+<span class="badge  mr-1"> {{pais[0].translations['deu'].official}}</span>
+<span class="badge  mr-1"> {{pais[0].translations['ara'].official}}</span>
+<span class="badge  mr-1"> {{pais[0].translations['fra'].official}}</span>
+<span class="badge  mr-1"> {{pais[0].translations['nld'].official}}</span>
+
+
+
+    </div>
+
+</div>
+</ng-template>

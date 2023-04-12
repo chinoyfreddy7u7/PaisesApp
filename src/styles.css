@@ -1,1 +1,205 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+ font-family: 'Times New Roman';
+ font-style:italic;
+
+   }
+   .moon{
+    display: flex;
+    position: absolute;
+    
+  ;
+   }
+   /*Fin del body */
+
+
+.small-flag{
+    width: 50px;
+    ;
+}
+/*fin edit del small-flag (se encuentra en pais-tabla.component */
+
+/*Inicio edit pais-tabla-component */
+
+
+
+/*inicio edit por-pais-component */
+
+
+
+
+.imagen-container{
+    display: flex;
+    position: absolute;
+    /*background-image: url("assets/ciudades.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px;
+    opacity: 40%;   
+}
+.porPais{
+    display: flex;
+    position: absolute;
+    margin-left:110px;
+    margin-top: 80px;
+}
+.input{
+    
+    position: absolute;
+    margin-left: 150px;
+    margin-top:  150px;
+}
+
+.formulario {
+    background: none;
+    border-color: black;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+::placeholder{
+    color: black;
+}
+.tabla-container{
+position: absolute;
+ margin: 250px 0px 0px 170px;
+}
+
+/*--------------------------------*/
+
+/*Inicio ver-pais.component.html */
+
+
+.nombre-pais{
+    position: absolute;
+    color: black;
+    margin-top: 70px;
+    margin-left: 320px;
+    margin-bottom: 10px;
+}
+.contenedor-informacion{
+    display: grid;
+    position: relative;
+    float: right;
+    margin-top: 250px;
+    
+    
+}
+
+#informacion{
+   margin: 10px 20px 10px 5px;
+   text-decoration: underline;
+    
+
+}
+.contenedor-traduccion{
+    position: relative;
+    float: right;
+    margin-top: 380px;
+    margin-right: -150px;
+
+}
+.traducciones{
+    
+    position:relative;
+    float: right;
+    margin-top: 440px;
+    margin-right: -320px;
+}
+.imagen-fondo{
+    position: absolute;
+    margin-left: 575px;
+    margin-top: 200px;
+    
+    
+
+}
+
+
+/*FIN EDICION VER-PAIS.COMPONENT.HTML */
+
+/*-------------------------------------*/
+/* INICIO EDICION DEL SIDEBAR */
+
+.busqueda{
+    position: relative;
+    margin-top: 150px;
+    outline: none;
+}
+
+
+
+/*inicio edicion del contenedor de la bandera */
+
+/*acá trabajaremos en el edit donde se reflejará la bandera del pais seleccionado */
+.contenedor-bandera{
+    position: absolute;
+    float: right;
+    padding: 230px;
+ 
+    
+   
+
+}
+
+/*acá editamos la palabra bandera que está dentro del contenedor */
+
+.bandera{
+    color:	black;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+}
+
+/*fin de la edicion de ver-pais.component */
+
+
+/*Inicio edicion por-region.component */
+
+#busqueda-region{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+#sel-region{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+
+}
+.region-contenedor{
+ position: relative;
+ text-align: center;
+
+} 
+
+.tabla{
+ display: flex;
+ margin-top: -150px;
+}  
+
+/*FIN EDIT POR-REGION-COMPONENT */
+
+/*-----------------------------*/
+
+/*INICIO EDIT POR-CAPITAL-COMPONENT */
+
+#busqueda{
+    position: absolute;
+    margin-left:110px;
+    margin-top: 80px;
+}
+.capital-contenedor{
+    position: absolute;
+    margin-left: 150px;
+    margin-top:  150px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
